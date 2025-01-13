@@ -1,1 +1,96 @@
+/* Grid System */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .col {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .col-sm { flex: 0 0 50%; max-width: 50%; }
+  .col-md { flex: 0 0 33.333%; max-width: 33.333%; }
+  .col-lg { flex: 0 0 25%; max-width: 25%; }
+
+  /* Utility Classes */
+  .text-center { text-align: center; }
+  .text-primary { color: #1976d2; }
+
+  /* Date Picker Styling */
+  .date-picker {
+    position: relative;
+    display: inline-block;
+  }
+
+  .date-picker input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .date-picker .calendar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .calendar-header select {
+    padding: 5px;
+  }
+
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .calendar th, .calendar td {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+
+  .calendar td:hover {
+    background-color: #f1f1f1;
+  }
+
+  .calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .calendar-controls button {
+    padding: 5px 10px;
+    border: none;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .calendar-controls button:hover {
+    background: #145ca8;
+  }
